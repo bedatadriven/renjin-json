@@ -1,0 +1,7 @@
+
+importClass(org.renjin.cran.rjson.JsonWritingVisitor)
+importClass(org.renjin.cran.rjson.JsonParser)
+
+
+export(toJSON, newJSONParser, fromJSON)
+
