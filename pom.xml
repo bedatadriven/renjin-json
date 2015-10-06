@@ -14,6 +14,19 @@
     <renjin.version>0.7.0-RC8-SNAPSHOT</renjin.version>
   </properties>
 
+  <scm>
+    <url>scm:git:git@github.com:bedatadriven/renjin-json.git</url>
+    <connection>scm:git:git@github.com:bedatadriven/renjin-json.git</connection>
+    <developerConnection>scm:git:git@github.com:bedatadriven/renjin-json.git</developerConnection>
+  </scm>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  
   <distributionManagement>
     <repository>
       <id>renjin-release</id>
