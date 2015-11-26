@@ -11,7 +11,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <renjin.version>0.7.0-RC8-SNAPSHOT</renjin.version>
+    <renjin.version>0.8.1591</renjin.version>
   </properties>
 
   <scm>
