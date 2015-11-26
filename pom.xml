@@ -54,7 +54,7 @@
     <dependency>
       <groupId>org.renjin</groupId>
       <artifactId>hamcrest</artifactId>
-      <version>${renjin.version}</version>
+      <version>1.3</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
