@@ -29,15 +29,10 @@
   
   <distributionManagement>
     <repository>
-      <id>renjin-release</id>
+      <id>renjin-packages</id>
       <name>Renjin Releases</name>
-      <url>http://nexus.bedatadriven.com/content/repositories/renjin-release/</url>
+      <url>https://nexus.bedatadriven.com/content/repositories/renjin-packages</url>
     </repository>
-    <snapshotRepository>
-      <id>renjin-latest</id>
-      <name>Renjin Latest Builds</name>
-      <url>http://nexus.bedatadriven.com/content/repositories/renjin-latest/</url>
-    </snapshotRepository>
   </distributionManagement>
 
   <modules>
