@@ -11,7 +11,6 @@
 
   <groupId>org.renjin.cran</groupId>
   <artifactId>rjson</artifactId>
-  <version>0.2.16-SNAPSHOT</version>
 
   <dependencies>
     <dependency>
