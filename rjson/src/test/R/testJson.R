@@ -77,8 +77,6 @@ test.readObjects <- function() {
     assertThat(fromJSON('{"x": { "a": 42, "b":  43}, "y": 42}'), identicalTo(list(x = list(a=42, b=43), y = 42)))
 }
 
-setwd("/home/alex/dev/renjin-json/rjson/src/test/R/")
-
 test.list3 <- function() {
 
     json <- fromJSON(file="list.json")
