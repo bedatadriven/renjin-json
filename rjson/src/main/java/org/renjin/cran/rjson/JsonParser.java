@@ -219,33 +219,34 @@ public class JsonParser {
     }
     
     private static ListVector finishReadingArrayAsListVector(ListVector.Builder list, JsonReader reader) throws IOException {
-        switch (reader.peek()) {
-            case NUMBER:
-                list.add(new DoubleArrayVector(reader.nextDouble()));
-                break;
-            
-            case BOOLEAN:
-                list.add(LogicalArrayVector.valueOf(reader.nextBoolean()));
-                break;
-            
-            case NULL:
-            case BEGIN_ARRAY:
-            case BEGIN_OBJECT:
-                list.add(readSexp(reader));
-                break;
-            
-            case STRING:
-                list.add(new StringArrayVector(reader.nextString()));
-                break;
-            
-            case END_ARRAY:
-                reader.endArray();
-                return list.build();
-                
-            default:
-                throw new IllegalStateException("Unexpected token: " + reader.peek());
-        }   
-        return list.build();
+        while(true) {
+            switch (reader.peek()) {
+                case NUMBER:
+                    list.add(new DoubleArrayVector(reader.nextDouble()));
+                    break;
+
+                case BOOLEAN:
+                    list.add(LogicalArrayVector.valueOf(reader.nextBoolean()));
+                    break;
+
+                case NULL:
+                case BEGIN_ARRAY:
+                case BEGIN_OBJECT:
+                    list.add(readSexp(reader));
+                    break;
+
+                case STRING:
+                    list.add(new StringArrayVector(reader.nextString()));
+                    break;
+
+                case END_ARRAY:
+                    reader.endArray();
+                    return list.build();
+
+                default:
+                    throw new IllegalStateException("Unexpected token: " + reader.peek());
+            }
+        }
     }
 
 

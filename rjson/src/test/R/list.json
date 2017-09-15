@@ -1,0 +1,19 @@
+[{
+  "Sepal.Length": 5.1,
+  "Sepal.Width": 3.5,
+  "Petal.Length": 1.4,
+  "Petal.Width": 0.2,
+  "Species": "setosa"
+}, {
+  "Sepal.Length": 4.9,
+  "Sepal.Width": 3,
+  "Petal.Length": 1.4,
+  "Petal.Width": 0.2,
+  "Species": "setosa"
+}, {
+  "Sepal.Length": 4.7,
+  "Sepal.Width": 3.2,
+  "Petal.Length": 1.3,
+  "Petal.Width": 0.2,
+  "Species": "setosa"
+}]
