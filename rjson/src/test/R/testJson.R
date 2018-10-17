@@ -82,3 +82,12 @@ test.list3 <- function() {
     json <- fromJSON(file="list.json")
     assertThat(length(json), equalTo(3))
 }
+
+test.emptyArray <- function() {
+    assertThat(fromJSON('{"x": null, "y": [] }'), identicalTo(list(x=NULL,y=list())))
+}
+
+test.github <- function() {
+    json <- fromJSON(file="github.json")
+
+}

@@ -108,6 +108,7 @@ public class JsonParser {
         // By the convention introduced by rjson, a zero-length JSON array
         // is always read as a list.
         if(head.size() == 0) {
+            reader.endArray();
             return ListVector.EMPTY;
         }
         if(numeric == 1) {
